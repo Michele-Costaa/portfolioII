@@ -13,7 +13,8 @@ export const GlobalStyle = createGlobalStyle`
 `;
 
 export const NavbarWrapper = styled.div`
-  background: #ff8d01;
+  background: #fdf501;
+  box-shadow: 0 0 20px 3px;
   height: 60px;
   display: flex;
   justify-content: space-between;
@@ -40,6 +41,7 @@ export const NavItems = styled.div`
     height: -webkit-fill-available;
     transform: translateX(-100%);
     transition: 0.3s ease all;
+    z-index: 1;
 
     ${(props) =>
       props.isOpen &&
@@ -54,6 +56,15 @@ export const NavItem = styled.a`
   color: white;
   position: relative;
   text-decoration: none;
+
+  /* span {
+    border: solid red;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: green;
+  } */
 `;
 
 export const Toggle = styled.div`

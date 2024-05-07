@@ -12,6 +12,7 @@ export default function Header() {
         <S.NavItem href="#">INICIO</S.NavItem>
         <S.NavItem href="#">SOBRE MIM</S.NavItem>
         <S.NavItem href="#">PROJETOS</S.NavItem>
+        <span></span>
       </S.NavItems>
 
       <S.Toggle onClick={() => setIsOpen(!isOpen)}>
